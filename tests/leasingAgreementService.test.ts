@@ -3,7 +3,7 @@
  * Tests business logic, error handling, and edge cases
  */
 
-import { LeasingAgreementService } from '../services/leasingAgreementService';
+import { LeasingAgreementService } from '../src/services/leasingAgreementService';
 import { 
   CreateAgreementRequest, 
   LeasingAgreement,
@@ -16,8 +16,8 @@ import {
   IInventoryService,
   IBillingService,
   IEmployeeService
-} from '../types';
-import { Logger } from '../utils/logger';
+} from '../src/types';
+import { Logger } from '../src/utils/logger';
 
 // Mock implementations for dependencies
 class MockLeasingRepository implements ILeasingRepository {
